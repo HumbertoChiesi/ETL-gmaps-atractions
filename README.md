@@ -5,7 +5,7 @@ Logo em seguida é iniciada uma cadeia de tratamento onde os dados serão tratad
 E finalmente e feito a inserção desses dados em um DB SQL.
 
 
-# Recorte da parte do DB que é alimentado pelo processo:
+# Recorte de parte da DB que é alimentada pelo processo:
 ![teste](https://i.imgur.com/IcwgRyG.png)
 
 # Exemplos de resultados de recomendação com base em palavras chave:
