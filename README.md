@@ -1,7 +1,7 @@
 # ETL atrações google maps
 Projeto feito para extração de informações sobre atrações do Google Maps para serem utilizadas em um sistema de recomendação Turístico.
 
-- A extração é feita via Web Scraping utilizando Python e Selenium.
+- A extração é feita via Web Scraping utilizando Python e Selenium, em até 3 threadings simultâneas.
   
 - Logo em seguida é iniciada uma cadeia de tratamento onde os dados serão tratados e também acontece a geração de alguns novos campos com base nos dados coletados (latitude, longitude, palavras-chaves e embeddings).
   
