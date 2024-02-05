@@ -7,9 +7,8 @@ Projeto feito para extração de informações sobre atrações do Google Maps p
   
 - E finalmente e feito a inserção desses dados em um DB SQL.
 
+# Exemplos de resultados de recomendação com base em palavras chave:
+![teste](https://i.imgur.com/LtcgeLe.png) ![teste](https://i.imgur.com/opKr1My.png) ![teste](https://i.imgur.com/u2iTjcq.png)
 
 # Recorte de parte da DB que é alimentada pelo processo:
 ![teste](https://i.imgur.com/IcwgRyG.png)
-
-# Exemplos de resultados de recomendação com base em palavras chave:
-![teste](https://i.imgur.com/LtcgeLe.png) ![teste](https://i.imgur.com/opKr1My.png) ![teste](https://i.imgur.com/u2iTjcq.png)
