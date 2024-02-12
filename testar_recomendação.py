@@ -11,7 +11,7 @@ def transform_to_array(text):
     return array[0]
 
 
-if __name__ == "__main__":
+def main():
     new_string = input("Digite palavras chave: ").lower()
 
     pd.set_option('display.max_columns', None)
@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
     new_inputs = tokenizer(new_string, return_tensors="pt", padding=True, truncation=True)
     with torch.no_grad():
-        new_embedding = model(**new_inputs).last_hidden_state.mean(dim=1)  # Mean pooling of embeddings
+        new_embedding = model(**new_inputs).last_hidden_state.mean(dim=1)
 
     query_data = new_embedding.tolist()
 
@@ -41,3 +41,7 @@ if __name__ == "__main__":
     for idx in indices[0]:
         i += 1
         print(str(i) + " - " + place_names[idx])
+
+
+if __name__ == "__main__":
+    main()
