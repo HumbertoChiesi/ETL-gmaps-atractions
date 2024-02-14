@@ -22,7 +22,10 @@ def main():
     place_names = list(df['nome'])
 
     k = 10
-    nn_model = NearestNeighbors(n_neighbors=k)
+    nn_model = NearestNeighbors(n_neighbors=k,
+                                metric='cosine',
+                                algorithm='brute',
+                                n_jobs=-1)
     nn_model.fit(place_embeddings)
 
     tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased')
