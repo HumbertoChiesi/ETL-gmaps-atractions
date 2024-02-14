@@ -1,7 +1,7 @@
 # ETL atrações google maps
 Projeto desenvolvido para extração e tratamento de informações sobre atrações do Google Maps, para serem utilizadas em um sistema de recomendação Turístico.
 
-Etapas do processo:
+## Etapas do processo:
 
 - A extração é feita via Web Scraping utilizando Python, Selenium e threading.
   
@@ -9,13 +9,13 @@ Etapas do processo:
   
 - Por fim, os dados são inseridos em um banco de dados SQL.
 
-Geração dos embeddings:
+## Geração dos embeddings:
 
 - A partir dos comentários de cada atração, são extraídas palavras-chave utilizando a medida estatística TF-IDF.
 
 - Em seguida, o texto das palavras-chave é utilizado para obter os embeddings utilizando o modelo BERTimbau.
 
-Processo de recomendação:
+## Processo de recomendação:
 
 - Recebendo um texto de entrada, é gerado um embedding utilizando o modelo BERTimbau.
 
