@@ -3,7 +3,7 @@
 Project developed for extracting and processing information about places from Google Maps, to be used in a Touristic recommendation system.
 
 ## Process Steps:
-Extraction is performed via Web Scraping using Python, Selenium, and threading.
+The extraction is performed via Web Scraping using Python, Selenium, and threading.
 
 Next, a sequence of steps for data processing begins, including the creation of new fields based on the obtained information (latitude, longitude, keywords, and embeddings).
 
