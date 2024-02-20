@@ -19,6 +19,7 @@ Upon receiving an input text, an embedding is generated using the BERTimbau* mod
 
 This embedding is compared with the embeddings of the attractions using the KNN method with cosine similarity, to find the most similar place to the input text.
 
+
 ``` *BERTimbau is a pretrained BERT model for Brazilian Portuguese. ```
 
 # Examples of recommendation results based on keywords:
