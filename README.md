@@ -1,4 +1,4 @@
-# Google Maps Attractions ETL
+# Google Maps Places data ETL
 
 Project developed for extracting and processing information about places from Google Maps, to be used in a Touristic recommendation system.
 
