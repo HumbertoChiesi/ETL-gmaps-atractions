@@ -12,7 +12,7 @@ Finally, the data is inserted into a SQL database.
 ## Embeddings Generation:
 From the comments of each Google Maps places extracted, keywords are extracted using the TF-IDF statistical measure.
 
-Then, for each place, the text containing all the keywords is of the place is used to obtain embeddings using the BERTimbau* model.
+Then, for each place, the text containing all the keywords of the place is used to obtain embeddings using the BERTimbau* model.
 
 ## Recommendation Process:
 Upon receiving an input text, an embedding is generated using the BERTimbau* model.
