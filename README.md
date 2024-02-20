@@ -17,7 +17,7 @@ Then, for each place, the text containing all the keywords of the place is used 
 ## Recommendation Process:
 Upon receiving an input text, an embedding is generated using the BERTimbau* model.
 
-This embedding is compared with the embeddings of the attractions using the KNN method with cosine similarity, to find the most similar place to the input text.
+This embedding is compared with the embeddings of the places extracted using the KNN method with cosine similarity, to find the most similar places to the input text.
 
 
 ``` *BERTimbau is a pretrained BERT model for Brazilian Portuguese. ```
