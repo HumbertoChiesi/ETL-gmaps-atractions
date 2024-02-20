@@ -1,28 +1,28 @@
-# ETL atrações google maps
-Projeto desenvolvido para extração e tratamento de informações sobre atrações do Google Maps, para serem utilizadas em um sistema de recomendação Turístico.
+# Google Maps Attractions ETL
 
-## Etapas do processo:
+Project developed for extracting and processing information about places from Google Maps, to be used in a Touristic recommendation system.
 
-- A extração é feita via Web Scraping utilizando Python, Selenium e threading.
-  
-- Em seguida, inicia-se uma sequência de etapas para o tratamento dos dados, incluindo a criação de novos campos com base nas informações obtidas (latitude, longitude, palavras-chave e embeddings).
-  
-- Por fim, os dados são inseridos em um banco de dados SQL.
+## Process Steps:
+Extraction is performed via Web Scraping using Python, Selenium, and threading.
 
-## Geração dos embeddings:
+Next, a sequence of steps for data processing begins, including the creation of new fields based on the obtained information (latitude, longitude, keywords, and embeddings).
 
-- A partir dos comentários de cada atração, são extraídas palavras-chave utilizando a medida estatística TF-IDF.
+Finally, the data is inserted into a SQL database.
 
-- Em seguida, o texto das palavras-chave é utilizado para obter os embeddings utilizando o modelo BERTimbau.
+## Embeddings Generation:
+From the comments of each Google Maps places extracted, keywords are extracted using the TF-IDF statistical measure.
 
-## Processo de recomendação:
+Then, for each place, the text containing all the keywords is of the place is used to obtain embeddings using the BERTimbau* model.
 
-- Recebendo um texto de entrada, é gerado um embedding utilizando o modelo BERTimbau.
+## Recommendation Process:
+Upon receiving an input text, an embedding is generated using the BERTimbau* model.
 
-- Este embedding é comparado com os embeddings das atrações utilizando o método KNN com similaridade por cosseno, para encontrar as atrações mais similares ao texto de entrada.
+This embedding is compared with the embeddings of the attractions using the KNN method with cosine similarity, to find the most similar place to the input text.
 
-# Exemplos de resultados de recomendação com base em palavras chave:
+*BERTimbau Base is a pretrained BERT model for Brazilian Portuguese
+
+# Examples of recommendation results based on keywords:
 ![teste](https://i.imgur.com/LtcgeLe.png) ![teste](https://i.imgur.com/opKr1My.png) ![teste](https://i.imgur.com/u2iTjcq.png)
 
-# Recorte de parte da DB que é alimentada pelo processo:
+# Subset of the Database Populated by the Process::
 ![teste](https://i.imgur.com/IcwgRyG.png)
