@@ -25,5 +25,5 @@ This embedding is compared with the embeddings of the attractions using the KNN 
 # Examples of recommendation results based on keywords:
 ![teste](https://i.imgur.com/LtcgeLe.png) ![teste](https://i.imgur.com/opKr1My.png) ![teste](https://i.imgur.com/u2iTjcq.png)
 
-# Subset of the Database Populated by the Process::
+# Subset of the Database Populated by the Process:
 ![teste](https://i.imgur.com/IcwgRyG.png)
